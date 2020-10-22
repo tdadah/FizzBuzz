@@ -15,7 +15,7 @@
 		/// <returns>
 		/// Returns true if x is divisible by n, otherwise returns false.
 		/// </returns>
-		public static bool IsDivisibleBy( int n, int d )
+		public static bool IsaMulipleOf( int n, int d )
 		{
 			return n % d == 0;
 		}

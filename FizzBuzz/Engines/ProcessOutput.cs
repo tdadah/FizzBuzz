@@ -38,7 +38,7 @@ namespace FizzBuzz.Engines
 					var outputNumber = true;
 					foreach(var item in intReplacement)
 					{
-						if (FizzBuzzMath.IsDivisibleBy(i, item.Multiple))
+						if (FizzBuzzMath.IsaMulipleOf(i, item.Multiple))
 						{
 							output += item.Value;
 							outputNumber = false;
