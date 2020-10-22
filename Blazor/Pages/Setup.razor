@@ -1,0 +1,23 @@
+﻿@page "/setup"
+
+<h3>FizzBuzz</h3>
+
+<p>Start number: @start</p>
+<p>End number: @end</p>
+
+<button class="btn btn-primary" @onclick="UpdateProperties">Update</button>
+
+@code {
+    private int start = 0;
+    private int end = 100;
+
+    [Parameter]
+    public int Start { get; set; } = 0;
+    public int End { get; set; } = 100;
+
+    private void UpdateProperties()
+    {
+        Start = start;
+        End = end;
+    }
+}

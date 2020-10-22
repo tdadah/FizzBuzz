@@ -1,0 +1,24 @@
+﻿@using FizzBuzz.Engines;
+
+<p>
+    <button class="btn btn-primary" @onclick="GetFizzBuzz">Click me</button>
+</p>
+
+<p>@output</p>
+
+@code {
+    private string output = string.Empty;
+
+    [Parameter]
+    public int Start { get; set; } = 0;
+
+    [Parameter]
+    public int End { get; set; } = 0;
+
+    private void GetFizzBuzz()
+    {
+        var inputData = new BlazorFizzBuzz.Data.InputData();
+
+        output = ProcessOutput.FizzBuzz(inputData.MultipleValues, Start, End);
+    }
+}
