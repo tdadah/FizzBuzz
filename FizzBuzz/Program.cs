@@ -8,6 +8,10 @@ namespace FizzBuzz
 {
 	public class Program
 	{
+		/// <summary>
+		/// Main sets up the data and calls ProcessOutput.FizzBuzz and outputs the results.
+		/// </summary>
+		/// <param name="args"></param>
 		public static void Main( string[] args )
 		{
 			var watch = System.Diagnostics.Stopwatch.StartNew();

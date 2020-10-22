@@ -2,9 +2,22 @@
 {
 	public static class FizzBuzzMath
 	{
-		public static bool IsDivisibleBy( int x, int n )
+		/// <summary>
+		/// Calculates if x is divisible by n using the modulo operator.
+		/// If the remainder is zero, then x is divisible by n.
+		/// </summary>
+		/// <param name="n">
+		/// Numerator
+		/// </param>
+		/// <param name="d">
+		/// Denominator
+		/// </param>
+		/// <returns>
+		/// Returns true if x is divisible by n, otherwise returns false.
+		/// </returns>
+		public static bool IsDivisibleBy( int n, int d )
 		{
-			return x % n == 0;
+			return n % d == 0;
 		}
 	}
 }

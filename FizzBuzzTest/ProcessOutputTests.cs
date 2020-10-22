@@ -58,5 +58,22 @@ namespace FizzBuzzTest
 			// Assert
 			Assert.AreEqual( "BuzzWizz\n", result );
 		}
+
+		[TestMethod]
+		public void FizzBuzzValidStartEndTest()
+		{
+			// Arrange
+			var multipleValues = new List<MultipleValue>
+			{
+				new MultipleValue( 3, "Fizz" ),
+				new MultipleValue( 5, "Buzz" )
+			};
+
+			// Act
+			var result = ProcessOutput.FizzBuzz(multipleValues, 9, 1);
+
+			// Assert
+			Assert.AreEqual("Invalid inputs, start should be less than end.", result);
+		}
 	}
 }
