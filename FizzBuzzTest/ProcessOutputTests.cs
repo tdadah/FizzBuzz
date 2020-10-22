@@ -1,7 +1,9 @@
-﻿using FizzBuzz.Engines;
-using FizzBuzz.Models;
+﻿using System.Collections.Generic;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
+
+using FizzBuzz.Engines;
+using FizzBuzz.Models;
 
 namespace FizzBuzzTest
 {

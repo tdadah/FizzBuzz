@@ -1,5 +1,6 @@
-using FizzBuzz.Engines;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+using FizzBuzz.Engines;
 
 namespace FizzBuzzTest
 {

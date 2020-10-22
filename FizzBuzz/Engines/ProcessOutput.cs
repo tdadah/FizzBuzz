@@ -1,6 +1,6 @@
-﻿using FizzBuzz.Models;
+﻿using System.Collections.Generic;
 
-using System.Collections.Generic;
+using FizzBuzz.Models;
 
 namespace FizzBuzz.Engines
 {
