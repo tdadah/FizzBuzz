@@ -14,8 +14,6 @@ namespace FizzBuzz
 		/// <param name="args"></param>
 		public static void Main( string[] args )
 		{
-			var watch = System.Diagnostics.Stopwatch.StartNew();
-
 			var intReplacement = new List<MultipleValue>
 			{
 				new MultipleValue( 3, "Fizz" ),
@@ -23,9 +21,7 @@ namespace FizzBuzz
 				new MultipleValue( 7, "Wizz" ),
 				new MultipleValue( 11, "Bang" )
 			};
-			Console.WriteLine( ProcessOutput.FizzBuzz( intReplacement, 1, 100 ) );
-
-			Console.WriteLine( $"\n\nElapsed time: {watch.ElapsedMilliseconds }" );
+			Console.WriteLine( ProcessOutput.FizzBuzz( intReplacement, 1, 100, "\n" ) );
 		}
 	}
 }

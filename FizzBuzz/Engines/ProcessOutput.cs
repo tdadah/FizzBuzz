@@ -24,7 +24,7 @@ namespace FizzBuzz.Engines
 		/// <returns>
 		/// The output string that can be printed with the results of either the number or the string replacement.
 		/// </returns>
-		public static string FizzBuzz( List<MultipleValue> intReplacement, int start, int end )
+		public static string FizzBuzz( List<MultipleValue> intReplacement, int start, int end, string newLine )
 		{
 			var output = string.Empty;
 			if( end < start)
@@ -50,7 +50,7 @@ namespace FizzBuzz.Engines
 						output += i;
 					}
 
-					output += "\n";
+					output += newLine;
 				}
 			}
 

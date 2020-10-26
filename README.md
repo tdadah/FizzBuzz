@@ -7,6 +7,6 @@ This is a C# .NET Core console application that prints out the numbers 1 - 100. 
 There is a Blazor project in this solution to provide a web application GUI for getting output.  This is not yet complete.
 
 ## Plans for improvement
-The Blazor implementation needs to have the start and end values as input in the setup so the user can set the values.  I also want to add the ability to add as many multiple/string value replacemnts as they want.  The ProcessOutput.FizzBuzz needs to be updated with a new parameter to pass the new line characater that would be used depending on the project being run.  For example we want /n in in the console application but <br /> in the web application.
+The Blazor implementation needs to have the start and end values as input in the setup so the user can set the values.  I also want to add the ability to add as many multiple/string value replacemnts as they want.
 
 Another potential improvement is to allow the user to input the start and stop numbers as well as the multiples and string replacements as parameters for the console application.

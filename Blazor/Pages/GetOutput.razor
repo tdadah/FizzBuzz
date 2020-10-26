@@ -4,7 +4,9 @@
     <button class="btn btn-primary" @onclick="GetFizzBuzz">Click me</button>
 </p>
 
-<p>@output</p>
+<p>
+   @((MarkupString)output)
+</p>
 
 @code {
     private string output = string.Empty;
@@ -19,6 +21,6 @@
     {
         var inputData = new BlazorFizzBuzz.Data.InputData();
 
-        output = ProcessOutput.FizzBuzz(inputData.MultipleValues, Start, End);
+        output = ProcessOutput.FizzBuzz(inputData.MultipleValues, Start, End, "<br>");
     }
 }
