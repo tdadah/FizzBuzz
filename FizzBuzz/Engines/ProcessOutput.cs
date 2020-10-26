@@ -12,7 +12,7 @@ namespace FizzBuzz.Engines
 		/// or the string replacement if the number is divisible by one of the provided multiple values in intReplacement.
 		/// </summary>
 		/// <param name="intReplacement">
-		///	List of MultipleValues where MultipleValues.Multiple representes the integer we are checking for divisibility
+		///	List of MultipleValues where MultipleValues.Multiple represents the integer we are checking for divisibility
 		///	and MultipleValues.Value which represents the string value that will replace the number we are printing out.
 		/// </param>
 		/// <param name="start">
@@ -20,6 +20,9 @@ namespace FizzBuzz.Engines
 		/// </param>
 		/// <param name="end">
 		/// The ending int for the loop, for example 100.
+		/// </param>
+		/// <param name="newLine">
+		/// The string representation for a new line, for example "\n" or "<br>".
 		/// </param>
 		/// <returns>
 		/// The output string that can be printed with the results of either the number or the string replacement.
