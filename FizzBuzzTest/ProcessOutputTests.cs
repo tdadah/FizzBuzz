@@ -20,8 +20,12 @@ namespace FizzBuzzTest
 				new MultipleValue( 5, "Buzz" )
 			};
 
+			var start = 9;
+			var end = 15;
+			var newLine = "\n";
+
 			// Act
-			var result = ProcessOutput.FizzBuzz( multipleValues, 9, 15 );
+			var result = ProcessOutput.FizzBuzz( multipleValues, start, end, newLine );
 
 			// Assert
 			Assert.AreEqual( "Fizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz\n", result );
@@ -37,8 +41,12 @@ namespace FizzBuzzTest
 				new MultipleValue( 11, "Bang" )
 			};
 
+			var start = 33;
+			var end = 33;
+			var newLine = "\n";
+
 			// Act
-			var result = ProcessOutput.FizzBuzz( multipleValues, 33, 33 );
+			var result = ProcessOutput.FizzBuzz( multipleValues, start, end, newLine );
 
 			// Assert
 			Assert.AreEqual( "FizzBang\n", result );
@@ -54,8 +62,12 @@ namespace FizzBuzzTest
 				new MultipleValue( 7, "Wizz" )
 			};
 
+			var start = 70;
+			var end = 70;
+			var newLine = "\n";
+
 			// Act
-			var result = ProcessOutput.FizzBuzz( multipleValues, 70, 70 );
+			var result = ProcessOutput.FizzBuzz( multipleValues, start, end, newLine );
 
 			// Assert
 			Assert.AreEqual( "BuzzWizz\n", result );
@@ -71,8 +83,12 @@ namespace FizzBuzzTest
 				new MultipleValue( 5, "Buzz" )
 			};
 
+			var start = 9;
+			var end = 1;
+			var newLine = "\n";
+
 			// Act
-			var result = ProcessOutput.FizzBuzz(multipleValues, 9, 1);
+			var result = ProcessOutput.FizzBuzz(multipleValues, start, end, newLine );
 
 			// Assert
 			Assert.AreEqual("Invalid inputs, start should be less than end.", result);
