@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 
+using FizzBuzz.Engines;
 using FizzBuzz.Models;
 
-namespace FizzBuzz.Engines
+namespace FizzBuzz.Managers
 {
 	public class ProcessOutput
 	{

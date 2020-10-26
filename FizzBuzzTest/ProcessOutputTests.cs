@@ -2,7 +2,7 @@
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using FizzBuzz.Engines;
+using FizzBuzz.Managers;
 using FizzBuzz.Models;
 
 namespace FizzBuzzTest

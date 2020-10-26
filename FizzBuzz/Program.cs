@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-using FizzBuzz.Engines;
+using FizzBuzz.Managers;
 using FizzBuzz.Models;
 
 namespace FizzBuzz
